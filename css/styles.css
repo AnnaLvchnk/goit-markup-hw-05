@@ -412,6 +412,9 @@ img {
 .footer-accent{
     color: #f4f4fd;
 }
+.footer-icon-hero {
+    margin-right: 80px;
+}
 .text-icon {
     color: #FFFFFF;
     font-size: 16px;
@@ -448,28 +451,60 @@ img {
 .footer-subscribe {
     margin-right: 159px;
 }
+.contact-form-footer {
+    display: flex;
+    gap: 24px;
+}
+.footer-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: #ffffff;
+}
+.footer-input::placeholder {
+    color: #ffffff;
+}
 .text-subscribe {
     color: white;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+.footer-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 24px;
 }
 .button-subscribe {
-    background-color: #4d5ae5;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: #fff;
-    cursor: pointer;
+    min-width: 156px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    padding: 8px 24px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
     border-radius: 4px;
 }
 .icon-telegram {
     color: #FFF;
+    margin-left: 16px;
 }
 /* Modal */
 .backdrop {
