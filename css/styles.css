@@ -528,9 +528,8 @@ img {
     border-radius: 4px;
     border: 1px rgba(46, 47, 66, 0.40) solid;
 }
-.input-modal:focus {
-    outline: none;
-    border-color: #4d5ae5;
+.input-modal:focus + .modal-input-icon {
+    fill: #4d5ae5;
 }
 .modal-textarea {
     resize: none;
@@ -538,4 +537,12 @@ img {
     width: 100%;
     border-radius: 4px;
     border: 1px rgba(46, 47, 66, 0.40) solid;
+}
+.modal-textarea::placeholder {
+    color: rgba(46, 47, 66, 0.40);
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    padding-top: 8px;
 }
