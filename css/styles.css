@@ -682,8 +682,9 @@ img {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    cursor: pointer;
 }
-.visually-hidden:checked {
+.visually-hidden:checked + .label-privacy .label-span {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
