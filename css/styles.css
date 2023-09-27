@@ -90,10 +90,8 @@ img {
 .nav-link:active {
     color: #404BBF;
 }
-.nav-link:hover{
-    color: #404bbf;
-}
-.nav-link:focus{
+.nav-link:hover,
+.nav-link:focus {
     color: #404bbf;
 }
 .nav-link::after {
@@ -448,9 +446,6 @@ img {
 .icon-fill {
     fill: #f4f4fd;
 }
-.footer-subscribe {
-    margin-right: 159px;
-}
 .contact-form-footer {
     display: flex;
     gap: 24px;
@@ -500,6 +495,10 @@ img {
     border: none;
     border-radius: 4px;
 }
+.button-subscribe:hover,
+.button-subscribe:focus {
+    background-color: #404BBF;
+}
 .icon-telegram {
     color: #FFF;
     margin-left: 16px;
@@ -517,8 +516,6 @@ img {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    padding-top: 80px;
-    padding-bottom: 12px;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close {
@@ -546,9 +543,6 @@ img {
     border-radius: 4px;
     width: 100%;
     max-width: 408px;
-    min-height: 584px;
-    height: 100%;
-    max-height: 584px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -601,8 +595,8 @@ img {
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #2E2F42;
 }
-
 .label-modal {
     display: block;
     margin-bottom: 4px;
@@ -642,9 +636,10 @@ img {
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     background-color: transparent;
-    padding: 8px 16px;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-left: 16px;
+    padding-top: 8px;
 }
 .modal-textarea:focus {
     border-color: #4D5AE5;
@@ -654,8 +649,6 @@ img {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.04em;
-    padding-left: 16px;
-    padding-top: 8px;
 }
 .modal-privacy {
     margin-bottom: 24px;
@@ -679,6 +672,7 @@ img {
     justify-content: center;
     fill: transparent;
     cursor: pointer;
+    margin-right: 8px;
 }
 .visually-hidden:checked + .label-privacy .label-span {
     background-color: #404bbf;
